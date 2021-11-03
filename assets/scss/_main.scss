@@ -1,28 +1,63 @@
-a:link
-{
-    color: goldenrod;
+*{
+    box-sizing: border-box;
+}
 
-}
 a {
-    color: goldenrod;
-    &:hover{ color: red;}
-    &:visited{ color: goldenrod;}
-    &:active{ color: purple;}
+    color: $primary_color;
+    &:hover{ color: $secondary_color;}
+    &:active{ color: $secondary_color;}
 }
-figure{
+figure{  
     margin: 0;
 }
-nav{
+header{
+    text-align: center;
+    img{
+        filter: grayscale(100);
+    }
+}
+
+nav {
     display: flex;
     justify-content: center;
+    background-color: white;
+    margin: 0;
 
-    ul{
-        list-style-type: none;
+    ul {
+       
         display: flex;
         justify-content: space-around;
-        gap: 1em;
-    }
-        li{
-            padding: 10px;
+        gap: .1em;
+    
+        li {
+            flex: 1 0 auto;
+            background-color: $primary_color;
+            padding: 15px 10px;
+            font-family: "Roboto";
+          
+            &:hover{
+                background-color:$white;
+                color: $primary_color;
+            }
+        
+            a{
+                color: $white;
+                text-decoration: none;
+                
+            }
         }
+    }
+}
+h1, h2{
+    color:$primary_color;
+    font-family: "VeraBold";
+
+}
+h1{
+    font-size: 5vh;
+}
+/**Section a propos**/
+.container{
+    display: flex;
+    justify-content: space-around;
 }
