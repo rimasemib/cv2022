@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/roboto/RobotoCondensed-Bold-webfont.woff") format("woff");
+    
+
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair regular';
+    src: url("../fonts/roboto/playfairld-webfont.ttf") format("ttf"),
+        url("../fonts/roboto/playfairld-re.woff") format("woff");
+    font-display: swap;
+}
+a:link{
+    color: teal;
+    text-decoration: none;
+}
+a:hover{
+   color: darkred; 
+}
+a:visited{
+    color: deepskyblue;
+}
+a:active{
+    color: fuchsia;
+}
+a[title]
+{
+    color: gold;
+}
+
+.footer {
+    background:url(../img/bg-motif.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    margin-top: 50px;
+}
+.main {
+    width: 80%;
+    margin: 0 auto;
+    /*margin: 10px 50px 50px 10px;
+    margin: 0 auto 0;*/
+}
+h1{
+    font-family: Roboto; 
+    text-align: center;
+    color: red;
+    font-size: 32px;
+    margin: 20px 0 50px 0;
+}
+h2{
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    
+}
+nav ul {
+    width: 70%;
+    margin: 0 auto;
+    background-color: silver;
+    height: 50px;
+    margin: 0 auto;
+   
+}
+nav ul li{
+    margin-right: 20px;
+    
+    float: left;
+    
+}
+.bold{
+    font-weight: bold;
+
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+.active{
+    color: coral;
+}
+
+h2.blue{
+    font-size: 25px;
+
+    
+}
+.footer .fab{ 
+    font-size: 3em;
+
+}
+
+#footer { 
+    font-size: 5em;
+ 
+}
+
+
+nav>ul li{
+    text-transform: uppercase;
+}
+
+.titleformation ~ article h3
+{
+    color: gold;
+}
+.apropos__figure-img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
