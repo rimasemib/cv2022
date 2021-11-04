@@ -1,15 +1,17 @@
-*{
-    box-sizing: border-box;
+*{box-sizing: border-box;}
+a{
+    color:$primary_color;
+    &:hover {color: $secondary_color;}
+    &:active {color: $secondary_color;}
+}
+ul{
+    list-style: none;
 }
 
-a {
-    color: $primary_color;
-    &:hover{ color: $secondary_color;}
-    &:active{ color: $secondary_color;}
-}
-figure{  
+figure {
     margin: 0;
 }
+
 header{
     text-align: center;
     img{
@@ -20,44 +22,115 @@ header{
 nav {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color:green;
     margin: 0;
-
+    
     ul {
-       
         display: flex;
         justify-content: space-around;
         gap: .1em;
-    
-        li {
-            flex: 1 0 auto;
-            background-color: $primary_color;
-            padding: 15px 10px;
-            font-family: "Roboto";
-          
-            &:hover{
-                background-color:$white;
-                color: $primary_color;
-            }
-        
-            a{
-                color: $white;
-                text-decoration: none;
-                
-            }
+        li{
+           flex: 1 0 auto;
+           background-color: $primary_color;
+           padding: 15px 10px;
+           font-family: 'Roboto';
+            
+
+           &:hover{
+            background-color: $white;
+            color: $primary_color;
         }
+           a{
+               color: $white;
+               text-decoration: none; 
+           }
+        } 
     }
 }
-h1, h2{
-    color:$primary_color;
-    font-family: "VeraBold";
 
-}
 h1{
-    font-size: 5vh;
+    font-size: 0.5vh;
+   /* la racine r cest toujours html*/
+    font-family: 'Roboto';
+    color: $primary_color;
 }
-/**Section a propos**/
+h2{
+    font-family:'Roboto';
+    color: $secondary_color;
+}
+/** section a propos **/
+main section:first-child{
+    display: flex;
+}
 .container{
     display: flex;
     justify-content: space-around;
 }
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.mobile-menu{
+    display: none;
+    &:hover{
+        display: block;
+    }
+}
+.description{
+    line-height: 2em;
+    li{
+        &:nth-child(1){
+            font-size: 1.5em;
+        }
+        &:nth-child(2){
+            position: relative;
+            &::before{
+                font-family: "Material Icons";
+                content: "\e0be";
+                font-size: 1.2em;
+                position: absolute;
+                top: 0px;
+                left: -20px;
+            }
+        }
+       
+        &:nth-child(3){
+            position: relative;
+            &::before{
+               
+                font-size: 1.2em;
+                position: absolute;
+                top: 0px;
+                left: 20px;
+                font-family: "Material Icons";
+                content: "\e0b0";
+            }
+        }
+
+
+    }
+}
+section:nth-of-type(even){
+    background-color: rgba($color: #373737, $alpha: 1.0);
+    color: $white;
+    padding: 1em;
+    h2 {
+        color: $primary_color;
+    } 
+}
+section:nth-of-type(odd){
+    h2{
+        padding-left: 0.5em;
+    }
+}
+article{
+    padding: 0 1em;
+}
+.footer { 
+    background-color: rgba(17, 63, 87, 0.5);
+    color: rgb(121, 38, 38); 
+ 
+   
+    } 

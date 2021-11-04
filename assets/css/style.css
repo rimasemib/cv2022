@@ -1,25 +1,133 @@
-a:link {
-  color: goldenrod; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/RobotoCondensed-Bold-webfont.woff") format("woff");
+  font-display: swap; }
+@font-face {
+  font-family: "VeraBold";
+  src: url("../fonts/verabold/Vera-Bold-webfont.woff") format("woff");
+  font-display: swap; }
+* {
+  box-sizing: border-box; }
 
 a {
-  color: goldenrod; }
+  color: #daa520; }
   a:hover {
-    color: red; }
-  a:visited {
-    color: goldenrod; }
+    color: #373737; }
   a:active {
-    color: purple; }
+    color: #373737; }
+
+ul {
+  list-style: none; }
 
 figure {
   margin: 0; }
 
+header {
+  text-align: center; }
+  header img {
+    filter: grayscale(100); }
+
 nav {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-color: green;
+  margin: 0; }
   nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: space-around;
-    gap: 1em; }
+    gap: .1em; }
+    nav ul li {
+      flex: 1 0 auto;
+      background-color: #daa520;
+      padding: 15px 10px;
+      font-family: 'Roboto'; }
+      nav ul li:hover {
+        background-color: white;
+        color: #daa520; }
+      nav ul li a {
+        color: white;
+        text-decoration: none; }
+
+h1 {
+  font-size: 0.5vh;
+  /* la racine r cest toujours html*/
+  font-family: 'Roboto';
+  color: #daa520; }
+
+h2 {
+  font-family: 'Roboto';
+  color: #373737; }
+
+/** section a propos **/
+main section:first-child {
+  display: flex; }
+
+.container {
+  display: flex;
+  justify-content: space-around; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.mobile-menu {
+  display: none; }
+  .mobile-menu:hover {
+    display: block; }
+
+.description {
+  line-height: 2em; }
+  .description li:nth-child(1) {
+    font-size: 1.5em; }
+  .description li:nth-child(2) {
+    position: relative; }
+    .description li:nth-child(2)::before {
+      font-family: "Material Icons";
+      content: "\e0be";
+      font-size: 1.2em;
+      position: absolute;
+      top: 0px;
+      left: -20px; }
+  .description li:nth-child(3) {
+    position: relative; }
+    .description li:nth-child(3)::before {
+      font-size: 1.2em;
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      font-family: "Material Icons";
+      content: "\e0b0"; }
+
+section:nth-of-type(even) {
+  background-color: #373737;
+  color: white;
+  padding: 1em; }
+  section:nth-of-type(even) h2 {
+    color: #daa520; }
+
+section:nth-of-type(odd) h2 {
+  padding-left: 0.5em; }
+
+article {
+  padding: 0 1em; }
+
+.footer {
+  background-color: rgba(17, 63, 87, 0.5);
+  color: #792626; }
+
+@media screen and (min-width: 480px) and (max-width: 779px) {
+  h1 {
+    font-size: 10vh; }
+
+  .desktop {
+    display: block; }
+
+  .mobile {
+    display: none; } }
+@media screen and (min-width: 780px) {
+  h1 {
+    color: #373737; } }
 
 /*# sourceMappingURL=style.css.map */
