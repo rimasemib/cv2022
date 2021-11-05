@@ -113,9 +113,23 @@ section:nth-of-type(odd) h2 {
 article {
   padding: 0 1em; }
 
-.footer {
-  background-color: rgba(17, 63, 87, 0.5);
-  color: #792626; }
+footer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  footer .footer_social {
+    display: flex;
+    gap: 3em;
+    justify-content: space-around; }
+    footer .footer_social .footer_social-item {
+      font-size: 48px;
+      color: rgba(35, 26, 172, 0.3);
+      cursor: pointer;
+      transition-duration: 500ms; }
+      footer .footer_social .footer_social-item:hover {
+        color: royalblue; }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   h1 {
@@ -125,9 +139,23 @@ article {
     display: block; }
 
   .mobile {
-    display: none; } }
+    display: none; }
+
+  .formation-container {
+    display: flex; }
+    .formation-container article {
+      flex: 1; } }
 @media screen and (min-width: 780px) {
   h1 {
-    color: #373737; } }
+    color: #373737; }
+
+  .desktop {
+    display: block; }
+
+  .mobile {
+    display: none; }
+
+  .formation-container {
+    display: flex; } }
 
 /*# sourceMappingURL=style.css.map */

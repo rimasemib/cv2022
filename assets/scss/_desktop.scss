@@ -2,5 +2,16 @@
     h1{
         color: $secondary_color;
     }
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .formation-container{
+        display:flex;
+
+
+    }
     
 }
